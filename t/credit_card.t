@@ -20,7 +20,7 @@ $tx->content(
     state          => 'UT',
     zip            => '84058',
     card_number    => '4111111111111111',
-    expiration     => '1/05',
+    expiration     => '04/05',
 );
 $tx->test_transaction(1); # test, dont really charge
 $tx->submit();

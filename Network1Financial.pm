@@ -13,7 +13,7 @@ require Exporter;
 @ISA = qw(Exporter AutoLoader Business::OnlinePayment);
 @EXPORT = qw();
 @EXPORT_OK = qw();
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 $DEBUG = 0;
 
@@ -125,6 +125,7 @@ sub submit {
 
     $content{'expiration'} =~ /^(\d+)\/(\d+)$/;
     my($m, $y) = ($1, $2);
+    $m = $m+0;
     $m = "0$m" if $m<10;
     my $exp = "$m$y";
 

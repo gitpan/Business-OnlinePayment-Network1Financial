@@ -1,5 +1,8 @@
 Revision history for Perl extension Business::OnlinePayment::Network1Financial.
 
+0.02  Tue Dec 24 23:59:55 PST 2002
+	-silly bug with expiration dates.  doh
+
 0.01  Tue Dec 17 11:18:38 PST 2002
 	-original version; created by ivan 1.0
 
